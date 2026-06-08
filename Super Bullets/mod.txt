@@ -1,0 +1,18 @@
+{
+    "name" : "Ballistic Consistency",
+    "description" : "Standardizes bullet penetration profiles across all weapon categories for consistent behavior",
+    "author" : "Jessy-Boo",
+    "version" : "1.0",
+    "contact": "https://https://github.com/Jessy-Boo/payday2-mod-super-bullets",
+    "blt_version" : 2,
+    "hooks" : [
+        {
+            "hook_id" : "lib/units/weapons/raycastweaponbase",
+            "script_path" : "main.lua"
+        },
+        {
+            "hook_id" : "lib/units/enemies/cop/copdamage",
+            "script_path" : "main.lua"
+        }
+    ]
+}
